@@ -1,0 +1,2119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 15px;
+  background: #000 url(/images/Background_Black_MAIN_Texture.png) repeat top center;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:hover,
+button:hover,
+input:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+a:hover,
+a:focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: #fb085f;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  border: 0
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #333;
+  box-shadow: none;
+  border: 0;
+  /* background-color: transparent */
+}
+
+/*=--=-=-==-=-=---=-=-
+Header Css
+-=-=-=-=-=-=-=-*/
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 999999;
+  padding: 0.5rem 0;
+}
+
+.logoName img {
+  max-width: 80%;
+}
+
+.navbar {
+  padding: 0
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fb085f;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:last-child {
+  border: 2px solid;
+  padding: 0.5rem
+}
+
+.carousel-caption {
+  color: #000;
+  left: 12%;
+  right: auto;
+  text-align: left;
+  padding: 0;
+  width: 48%;
+  bottom: 150px
+}
+
+.carousel-caption h1 {
+  font-size: 65px;
+  line-height: 60px;
+  margin-bottom: 0.5rem
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1.5rem
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+  display: none;
+}
+
+/*-=-=--=-=-=--=-
+About Main Css
+-=-=-=-=-=-=-=-*/
+
+.aboutSection {
+  background: #fff url(/images/background_Gradient.png) no-repeat top center;
+  background-size: cover;
+  padding: 4rem 0 0
+}
+
+.aboutSection h2 {
+  font-size: 65px;
+  line-height: 60px;
+  padding-bottom: 1rem;
+  color: #000;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.aboutSection h2::after {
+  content: '';
+  left: 5px;
+  bottom: -30px;
+  background: #000;
+  width: 8px;
+  height: 40px;
+  position: absolute;
+}
+
+.aboutSection h3 {
+  font-size: 35px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.aboutSection p {
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.trainerImage {
+  position: relative;
+  top: -120px;
+  margin-bottom: -2rem
+}
+
+/*-=-=-=-=-=-=-=-==
+Image Block css
+-=-===-=-=-=*/
+
+.imageBlock {
+  padding: 0 0 7rem;
+}
+
+.imageBlock p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
+  margin-top: 4rem;
+}
+
+.paddLeft {
+  padding-left: 7rem;
+  padding-top: 9rem
+}
+
+.featureList {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -8rem;
+  padding: 0 3rem 0 0;
+}
+
+.featureList li {
+  text-align: center;
+  flex: 0 0 50%;
+  padding: 0 1rem
+}
+
+.featureList li:nth-child(odd) {
+  margin-top: 3rem
+}
+
+.featureList li span,
+.featureList li strong {
+  display: block;
+  margin-bottom: 0.5rem
+}
+
+.featureList li span {
+  width: 70px;
+  margin: auto auto 0.5rem;
+  padding: 0
+}
+
+.verticalDiv {
+  background: #000;
+  color: #fff;
+  display: flex;
+  width: 90%;
+  position: relative;
+}
+
+.verticalDiv p {
+  color: #fff;
+  margin: 0;
+  padding: 1rem;
+  font-size: 15px
+}
+
+.verticalDiv .btn-primary {
+  position: relative;
+}
+
+.verticalDiv .btn-primary span {
+  display: block;
+  min-width: 115px;
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  margin: auto;
+  transform: rotate(-90deg) translate(0%, -50%);
+  -webkit-transform: rotate(-90deg) translate(0%, -50%);
+}
+
+/*-=-=-=-==-=-==-=-=
+Blog Css
+-=-=-==-=-=-*/
+
+.blogSection {
+  padding: 3rem 0 7rem;
+}
+
+.blogSection .blogCol a {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+}
+
+.blogCol a p {
+  background: url(/images/Red_Gradient_1.png) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  padding: 1rem;
+  margin: 0
+}
+
+.blogSection .midCol {
+  margin-top: 8rem
+}
+
+.blogSection .blogTitle h2 {
+  color: #fff;
+  width: 40%;
+  margin-top: -4.5rem;
+  text-transform: capitalize;
+}
+
+.blogSection .blogBlocks {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
+
+.blogBlocks .blogCol {
+  flex: 0 0 30%
+}
+
+.blogBlocks .blogCol img {
+  width: 100%;
+}
+
+/*-=-=-=-=-=-=-=-=--*/
+.BGradientpara {
+  background: url(/images/Red_Gradient_1.png) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  padding: 2rem;
+  margin: 0
+}
+
+.BGradientpara p {
+  color: #fff;
+  margin: 0;
+  width: 60%;
+}
+
+.aboutSection .media {
+  margin: 3rem 0 2.8rem;
+}
+
+.aboutSection .media .media {
+  margin: 0 0 0 5rem;
+}
+
+.aboutSection .media p {
+  width: 60%
+}
+
+.aboutSection .media .media p {
+  width: 70%
+}
+
+.aboutSection .media .media .media p {
+  width: 95%
+}
+
+.secondBlock {
+  padding-bottom: 10rem;
+}
+
+.aboutSection .media-body h5 {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.trainerImage .btn-primary {
+  margin: 5.8rem 0 0 0
+}
+
+/*-=-=-=-=-=-=-
+Footer Css
+-=-=-=-=-=-=*/
+
+footer {
+  background: url(/images/Red_Gradient_1.png) repeat top center;
+  padding-bottom: 4rem;
+  padding-top: 2rem
+}
+
+.footerBlock {
+  background: #000 url(/images/Background_Black_MAIN_Texture.png) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  top: -8rem;
+  position: relative;
+  margin-bottom: 0
+}
+
+.footerBlock h2 {
+  color: #fff;
+  letter-spacing: normal;
+  text-transform: none;
+  margin: 2rem 0 1rem
+}
+
+.footerBlock p {
+  margin-bottom: 1.5rem
+}
+
+footer p {
+  color: #fff;
+}
+
+footer ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px
+}
+
+footer .footSocial {
+  margin: 2rem 0 0
+}
+
+footer .footSocial li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+footer .footSocial li a {
+  display: block;
+  background: #fff;
+  color: #fb085f;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+
+footer .footLinks li {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  margin-bottom: 0.5rem
+}
+
+/*-=---=-=-=-=-=
+Login Page Css
+-=-==-=-=-=*/
+
+.loginPage {
+  background: url(/images/Login_Background.png) no-repeat top center;
+  background-size: 100%;
+  padding: 4rem 0;
+  /* height: 100vh; */
+  min-height: 100vh;
+}
+
+.loginPage form {
+  background: #fff url(/images/background_Gradient.png) no-repeat top center;
+  padding: 2rem;
+  background-size: cover;
+}
+
+.loginPage form h2 {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.loginPage form .form-control {
+  border-radius: 0;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 1rem 0.5rem 2rem
+}
+
+.loginPage form .form-control::-webkit-input-placeholder {
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.loginPage form a {
+  display: block;
+  text-transform: uppercase;
+  color: #fb085f;
+  font-weight: 700;
+  margin: 1rem 0 3rem
+}
+
+.loginPage form a.text-style {
+  display: inline;
+  text-transform: none;
+  color: #000000;
+  font-weight: normal;
+  margin: 0
+}
+
+.loginPage form button {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.loginPage form button:hover,
+.loginPage form button:focus {
+  background: #333333;
+  color: #fff;
+}
+
+.btn-secondary {
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #555
+}
+
+.loginPage .billTag {
+  border: 2px solid #000;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-left: 0;
+  border-right: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 26px;
+}
+
+.loginPage p .numberTag {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #fb085f;
+  color: #fff;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  margin: auto auto 0.5rem;
+  font-weight: 700
+}
+
+/*-==-=-=-=-=-=-
+Our Trainers Css
+-=--=-=-=-=-=*/
+.trainerSection {
+  background: #fff url(/images/background_Gradient.png) no-repeat top center;
+  background-size: cover;
+  padding: 6rem 0 12rem
+}
+
+.trainerSection h1 {
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem
+}
+
+.trainerCol {
+  background: #fff;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.trainerCol a {
+  display: block;
+}
+
+.trainerCol a h3 {
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-size: 20px;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 600
+}
+
+.trainerCol video {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -0.3rem
+}
+
+.trainerAlbum {
+  position: relative;
+}
+
+.trainerAlbum span {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  width: 50px;
+  font-size: 1.2rem;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.trainerAlbum:hover span {
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  font-size: 2.5rem;
+  height: 100%;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.followTrainer {
+  color: #333;
+  font-size: 60px;
+}
+
+/*-=-=-==-=-=
+Our Programs Css
+-=-===-*/
+.programTabs {
+  margin-bottom: 1rem
+}
+
+.programTabs .nav-link {
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0;
+  margin: 0 0.7rem 0.7rem 0
+}
+
+.programTabs .nav-link.active,
+.programTabs .show>.nav-link,
+.programTabs .nav-link:hover,
+.programTabs .nav-link:focus {
+  color: #fff;
+  background-color: #fb085f;
+}
+
+.programCol {
+  background: #fff;
+  padding: 0.5rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: center
+}
+
+.programCol .heartIcon {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #fff;
+}
+
+.programCol h4 {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 1rem 0
+}
+
+.programCol .spaceCol {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center
+}
+
+.spaceCol span,
+.spaceCol strong {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+}
+
+.spaceCol p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+}
+
+.programCol ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border: 2px solid #eeeeee;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 1.5rem
+}
+
+.programCol ul li {
+  padding: 0.8rem 0;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  flex: 0 0 33%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.programCol ul li:nth-child(2) {
+  border-left: 2px solid #eeeeee;
+  border-right: 2px solid #eeeeee;
+}
+
+.programCol .btn-secondary {
+  margin-bottom: 1rem
+}
+
+/*-=-=-=-=-=-=-=-
+On-Demand Page Css
+-=-=--=-=-=-=-*/
+
+.ondemandCol h4 {
+  margin-top: 0.6rem;
+}
+
+.ondemandCol .heartIcon {
+  left: 1.5rem;
+  top: 0.5rem
+}
+
+.ondemandCol h4 span {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #555555;
+  float: right;
+  margin: 0.2rem 0 0
+}
+
+.ondemandCol .firstCol {
+  padding-right: 1rem
+}
+
+.ondemandCol .spaceCol {
+  align-items: normal;
+}
+
+.ondemandCol .spaceCol p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ondemandCol .spaceCol span {
+  display: inline-block;
+  padding: 0;
+}
+
+.ondemandCol .spaceCol strong {
+  padding: 0;
+  font-size: 14px;
+}
+
+.ondemandCol .spaceCol p .fa-user-circle {
+  font-size: 40px;
+  color: lightblue;
+  margin-left: 1rem
+}
+
+.demandDesc {
+  padding: 1rem 1rem 1rem 0;
+  margin-left: -15px;
+}
+
+.ondemandCol ul {
+  align-items: center;
+  margin: 0;
+  border-bottom: 0;
+}
+
+.ondemandCol .demandImage img {
+  object-fit: cover;
+  height: 240px;
+  width: 100%
+}
+
+.demandDesc .d-flex {
+  align-items: flex-start;
+}
+
+.ondemandCol ul .btn-secondary {
+  margin: 0
+}
+
+.ondemandCol ul li {
+  flex: auto
+}
+
+.ondemandCol ul li span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 0.5rem
+}
+
+/*-=-=--=-=-==-
+Pagination Css
+-=-==-=-=-=-=-=*/
+
+.pagination {
+  border-radius: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fb085f;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0;
+  font-weight: 700;
+  margin: 0 0.7rem;
+  color: #555;
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem
+}
+
+.page-link:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.page-item:first-child .page-link span,
+.page-item:last-child .page-link span {
+  display: none
+}
+
+.page-item:first-child .page-link::before {
+  font-family: 'FontAwesome';
+  content: '\f177';
+  color: #000;
+}
+
+.page-item:last-child .page-link::before {
+  font-family: 'FontAwesome';
+  content: '\f178';
+  color: #000;
+}
+
+.CalendarCol .topMonth p {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.CalendarCol .topMonth p strong {
+  font-weight: 700;
+  display: block;
+  line-height: 22px;
+}
+
+.CalendarCol .dayWise p strong {
+  font-size: 24px;
+}
+
+.CalendarCol .dayWise p {
+  padding: 2rem 1rem;
+  text-transform: none;
+  font-size: 14px;
+}
+
+.CalendarCol .dayWise p.active {
+  background: #333;
+  color: #fff
+}
+
+.CalendarCol .lastCol .borderBottom {
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 0 0.8rem 0;
+  font-weight: 700;
+  margin: 0
+}
+
+.CalendarCol .lastCol ul {
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center
+}
+
+.CalendarCol .lastCol ul strong {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.CalendarCol .lastCol ul strong span {
+  display: block
+}
+
+.CalendarCol .lastCol ul li .fa-user {
+  background: lightskyblue;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 0.5rem;
+  vertical-align: middle
+}
+
+.btn-outline-secondary {
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: none;
+  border: 2px solid #555;
+  color: #555;
+}
+
+.btn-outline-secondary,
+.btn-secondary {
+  min-width: 130px;
+}
+
+
+/*-=-==-=-=-=-=-
+Leaderboard Page
+-=-=-=-=-=-=-=-*/
+
+.boardTitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+
+.boardTitle i {
+  font-size: 22px;
+  margin-right: 0.5rem;
+  vertical-align: text-bottom
+}
+
+.boardTitle .form-group {
+  float: right;
+  width: auto;
+  margin: 0;
+}
+
+.boardTitle .form-group select {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+  font-size: 14px;
+}
+
+.halfList,
+.halfList ul li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.halfList ul {
+  flex: 0 0 49%;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee
+}
+
+.halfList ul li p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.halfList ul li p small {
+  display: block;
+  color: #999999;
+}
+
+.halfList ul li p span {
+  margin: 0
+}
+
+.halfList ul li p small i {
+  margin-right: .2rem;
+}
+
+.halfList ul li p .fa-user {
+  width: 35px;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: lightskyblue;
+  color: #fff;
+  margin: 0 1rem;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+.halfList ul li button {
+  border-radius: 0;
+  margin-left: 1rem;
+  pointer-events: none;
+  appearance: none;
+}
+
+/*-=--=-=-=-=
+Profile Pages Css
+-=-=-=-=--=-=-*/
+
+.profilePages .alert-dark {
+  background: #444444;
+  color: #fff;
+}
+
+.profilePages .alert-dark .close {
+  font-size: 1.5rem;
+}
+
+.profilePages .alert-dark i {
+  font-size: 1.5rem;
+  vertical-align: text-bottom;
+  margin-right: 0.5rem
+}
+
+.profilePages .alert-dark a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.profilePages .boxTitle {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem 0.5rem;
+}
+
+.profilePages .boxTitle h3 {
+  font-size: 18px;
+  letter-spacing: normal;
+}
+
+.profilePages .boxTitle h3 i {
+  margin-right: 0.5rem;
+  font-size: 22px
+}
+
+.profilePages button {
+  padding: 0.2rem 0.5rem;
+  font-size: 14px;
+}
+
+.profilePages .btn-outline-secondary, .profilePages .btn-secondary {
+  min-width: auto;
+}
+
+.profilePages .scheduleList li button {
+  min-width: 120px;
+}
+
+.profilePages .userInfo {
+  display: flex;
+  justify-content: space-between
+}
+
+.userInfo .userDesc {
+  padding: 1rem 0 1rem 1rem
+}
+
+.userInfo .userDesc h4, .userInfo .userDesc h5 {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.userInfo .userDesc h4 {
+  font-size: 18px;
+  margin-bottom: 1rem
+}
+
+.userInfo .userDesc h4 span {
+  display: block;
+  font-weight: normal;
+  color: #888;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.userInfo .userDesc h5 {
+  font-size: 15px;
+  margin-bottom: 0.5rem
+}
+
+.userInfo .userDesc p {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.profilePages .taskList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem
+}
+
+.badgeList, .friendList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between
+}
+
+.badgeList li {
+  flex: 0 0 15%;
+  padding: 0.5rem;
+  /* border: 1px solid #eee; */
+  margin: 0.2rem
+}
+
+.badgeList li img {
+  width: 60%;
+}
+
+.friendList li {
+  margin: 0 1.5rem 1rem 0
+}
+
+.friendList li i {
+  background: lightskyblue;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  color: #fff;
+  font-size: 22px;
+}
+
+.taskList li {
+  text-align: center;
+  border-left: 1px solid #eee;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px
+}
+
+.taskList li span {
+  font-size: 12px;
+  line-height: 15px;
+  display: block
+}
+
+.socialList li a {
+  color: #000;
+  font-size: 1.5rem
+}
+
+.scheduleList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.scheduleList li {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.scheduleList li i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: lightskyblue;
+  color: #fff;
+  margin: 0 1rem;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+.progressList, .messageBox ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap
+}
+
+.progressList li {
+  flex: 0 0 48%;
+  margin-bottom: 3.5rem
+}
+
+.progressList li p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0
+}
+
+.progressList li p strong {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.progressList .progressbar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.progressList .progressbar span {
+  position: absolute;
+  left: 20%;
+  bottom: -45px;
+  background: #eee;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.progressList .progressbar span::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #eee;
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.messageBox {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 1rem 1rem 4rem;
+  margin-bottom: 1rem
+}
+
+.messageBox .fa-user {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: lightskyblue;
+  color: #fff;
+  margin: 0 1rem;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  margin-left: -4rem;
+  float: left;
+}
+
+.messageBox p {
+  margin: 0 0 0.5rem;
+}
+
+.messageBox > p {
+  color: #999;
+  font-size: 14px;
+}
+
+.messageBox p span {
+  float: right;
+}
+
+.messageBox h4 {
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 600;
+  margin-bottom: 0.5rem
+}
+
+.progressList .progressbar::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  content: '';
+  background: #fb085f;
+  width: 25%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.messageBox li span {
+  margin-right: 1rem
+}
+
+.messageBox li a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700
+}
+
+
+/*-=-=-=-=-=-=--
+Badge Page Css
+-=-=--=-=-=-=-*/
+
+.badgeIcon {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #eee;
+  margin-bottom: 1rem;
+  text-align: center
+}
+
+.badgeIcon:hover {
+  border: 1px solid #fb085f;
+}
+
+.badgeIcon h5 {
+  letter-spacing: normal;
+  font-weight: 600;
+  margin: 0.7rem 0 0;
+  line-height: normal;
+  font-size: 14px;
+  color: #ccc
+}
+
+.badgeIcon img {
+  max-width: 80%;
+  filter: invert(0.7);
+  -webkit-filter: invert(0.7)
+}
+
+/*-=-==-=-=--=-
+Friends Page Css
+-=-==-==-=-==*/
+
+.friendsPage {
+  border: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.friendsPage .fa-plus-circle {
+  position: absolute;
+  left: -20px;
+  top: 31px;
+  font-size: 1.2rem;
+}
+
+.friendsPage h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.friendsPage p span {
+  float: none;
+}
+
+.tab-pane .boxTitle h3 {
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.tab-pane .boxTitle h3 span {
+  float: right;
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: none;
+  color: #555555;
+  margin: 0.3rem 0 0
+}
+
+.tab-pane .boxTitle h3 i {
+  margin: 0 0.2rem 0 0;
+}
+
+/*-=-=-=-=-=
+My Album Page Css
+-=-=-=-=-=-=-*/
+
+.albumCol span {
+  top: 1rem;
+  bottom: auto;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  font-size: 0.8rem;
+  color: #666;
+  right: 0.5rem;
+}
+
+.albumCol:hover span {
+  top: 1rem;
+  right: 0.5rem;
+  bottom: auto;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  background: rgba(255, 255, 255, 0.7)
+}
+
+.albumCol span.selected {
+  color: #fff;
+  background: #fb085f;
+}
+
+.albumCol ul {
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0
+}
+
+.albumCol ul li {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+/*-=-=-=-=-=-
+Friends Page Css
+-=-=-=-=--=*/
+
+.hrLine {
+  margin: 0 0 2rem 0
+}
+
+.fontColor {
+  color: #888888;
+  background: #eee;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  left: -25px;
+  position: absolute;
+  top: 30px;
+  font-size: 90%;
+  opacity: 0;
+}
+
+.fontColor.selected {
+  color: #fff;
+  opacity: 1;
+  background: #fb085f;
+}
+
+/*-=-=--=-=-=-
+Friend Request Page Css
+-=-=--=-=--*/
+
+.requestPage .boxTitle h3 {
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.requestPage .boxTitle h3 i {
+  margin: 0 0.2rem 0 0;
+}
+
+.friendsPage h4 span {
+  float: right;
+}
+
+.friendsPage h4 span i {
+  background: #333;
+  color: #fff;
+  margin-left: 0.5rem;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 80%;
+  border-radius: 100px;
+  -webkit-border-radius: 100px
+}
+
+.friendsPage h4 span .fa-check {
+  background: #fb085f;
+  color: #fff;
+}
+
+.friendListing {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.friendListing .friendsPage {
+  flex: 0 0 28%
+}
+
+/*-=--=-=-=-=-=
+Edit Profile Page Css
+-=-=--=--=-=-*/
+
+.profileForm .form-control {
+  border-radius: 0;
+  font-size: 14px;
+  border: 2px solid #333;
+  padding: 1rem 0.5rem 2rem
+}
+
+.profileForm .form-group {
+  position: relative;
+}
+
+.profileForm .form-group i {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  margin: auto
+}
+
+.profileForm .form-check-label {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.profileForm ul li {
+  margin-right: 1rem
+}
+
+.profileForm .profilePic label {
+  display: block;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profileForm li .btn-secondary {
+  padding: 0.5rem 1rem;
+  min-width: 0;
+  font-size: 14px;
+}
+
+.profileForm .form-control::-webkit-input-placeholder {
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.profileForm .boxTitle h3 span {
+  color: #999;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.fullList ul {
+  flex: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullList li img {
+  max-width: 30px;
+}
+
+.fullList li:first-child span {
+  margin-right: 1.5rem
+}
+
+.fullList li .btn-secondary {
+  font-size: 14px;
+  margin: 0 0.2rem;
+  padding: 0.3rem 0.5rem;
+  min-width: 0;
+}
+
+.fullList li span i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: lightskyblue;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  color: #fff;
+}
+
+/*-=-=-=-=-=
+Community Page Css
+-=-=---=-=--*/
+
+.socialMedia {
+  text-align: center;
+  margin: 5rem 0 3rem;
+}
+
+.socialMedia {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center
+}
+
+.socialMedia li a {
+  text-align: center;
+  display: block;
+  color: #fff;
+  margin: 0 1rem
+}
+
+.socialMedia li a i {
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.socialMedia li a:hover .fa-facebook {
+  background: #3b5998;  
+}
+
+.socialMedia li a:hover .fa-instagram {
+  background: #c32aa3;  
+}
+
+.socialMedia li a:hover .fa-twitter {
+  background: #1da1f2;  
+}
+
+/*-=--=-==--=
+Live Page Css
+-=-=--=-=-=-=*/
+
+.newHeader {
+  background: #000;
+  padding: 0.8rem 0;
+}
+
+.newHeader .userStatus li span {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700
+}
+
+.newHeader .userStatus li .bgColor {
+  background: #fb085f;
+  color: #fff;
+}
+
+.newHeader .userStatus li .userName {
+  padding: 0.5rem 1rem;
+}
+
+.livePage .liveScreen {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 1rem
+}
+
+.livePage .bg-black {
+  background: #060606;
+  position: relative;
+}
+
+.livePage .friendList li {
+  margin: 0
+}
+
+.livePage .scrollerDiv {
+  height: 520px;
+  overflow-y: auto;
+  margin-bottom: 8rem;
+}
+
+.livePage .scrollerDiv::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.livePage .scrollerDiv::-webkit-scrollbar-thumb {
+  background: none;
+  border-radius: 10px;
+}
+
+.livePage .scrollerDiv:hover::-webkit-scrollbar-thumb {
+  background: #444444;
+}
+
+.livePage .boxTitle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem
+}
+
+.livePage .boxTitle .btn-secondary {
+  background: #222222;
+  border: 0;
+  min-width: 0;
+  padding: 0.5rem 0.8rem;
+  font-size: 13px;
+}
+
+.livePage .boxTitle h3 {
+  color: #fff;
+  letter-spacing: normal;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.livePage .messageBox {
+  background: #fff;
+  margin-bottom: 0.15rem;
+  border: 0;
+  padding: 1rem 1rem 1rem 5rem;
+  font-size: 13px;
+}
+
+.livePage .messageBox h4, .livePage .messageBox p {
+  font-size: 13px;
+  margin-bottom: 0.2rem
+}
+
+.livePage .replyBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0.5rem
+}
+
+.livePage .replyBox .form-group {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.livePage .replyBox .form-control {
+  width: 100%;
+  border: 0;
+}
+
+
+/*-=-==-==--=-=-
+Responsive Media Css
+-=-=-=-=-=-*/
+@media (min-width:768px) and (max-width:991px) {
+  header {
+    padding: 1rem 0
+  }
+
+  header .container {
+    max-width: 100%
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    padding: 1rem;
+    margin-top: 42px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    border: 0;
+    top: -10px
+  }
+
+  .halfList ul {
+    flex: 0 0 100%;
+  }
+
+  .profilePages .scheduleList li button {
+    min-width: 100px;
+    font-size: 13px;
+  }
+
+  .badgeList li {
+    flex: 0 0 22%;
+  }
+
+  .friendListing .friendsPage {
+    flex: 0 0 42%
+  }
+}
+
+@media (max-width:767px) {
+  header {
+    padding: 1rem 0
+  }
+
+  header .container {
+    max-width: 100%
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    padding: 1rem;
+    margin-top: 42px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    border: 0;
+    top: -5px
+  }
+
+  .carousel-caption {
+    left: 5%;
+    width: 90%;
+    bottom: 53px;
+  }
+
+  .trainerImage {
+    top: 0;
+    margin: 0 0 1rem
+  }
+
+  .aboutSection {
+    padding-bottom: 3rem
+  }
+
+  .imageBlock {
+    padding: 0 0 3rem;
+  }
+
+  .imageBlock img {
+    width: 100%
+  }
+
+  .paddLeft {
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+
+  .featureList {
+    margin: 2rem 0 0
+  }
+
+  .verticalDiv {
+    width: 100%
+  }
+
+  .blogBlocks .blogCol {
+    flex: 0 0 33%
+  }
+
+  .blogSection {
+    padding: 3rem 0 5rem;
+  }
+
+  .blogSection .blogTitle h2 {
+    margin: 1rem 0 0;
+    width: 100%
+  }
+
+  .trainerImage .btn-primary {
+    margin: 1.8rem 0 0 0;
+  }
+
+  .aboutSection .media .media {
+    margin: 0;
+  }
+
+  .footerBlock {
+    top: 0;
+    padding: 1rem;
+    margin: 0 0 3rem
+  }
+
+  .footerBlock img {
+    width: 100%
+  }
+
+  footer {
+    padding-top: 2rem
+  }
+
+  .BGradientpara p {
+    width: 100%;
+  }
+
+  footer .footSocial {
+    margin: 1rem 0 0;
+  }
+
+  .footLinks {
+    margin-top: 2rem
+  }
+
+  .trainerSection {
+    padding: 5rem 0 3rem;
+  }
+
+  .demandDesc {
+    padding: 1rem;
+    margin-left: 0;
+  }
+  
+  .halfList ul {
+    flex: 0 0 100%;
+  }
+  
+  .progressList li {
+    flex: 0 0 100%;
+  }
+  
+  .badgeList li {
+    flex: 0 0 23%;
+  }
+
+  .friendListing .friendsPage {
+    flex: 0 0 48%
+  }
+}
+
+@media (max-width:575px) {
+  header {
+    background: #fff;
+    position: relative;
+  }
+
+  .navbar-toggler {
+    top: -32px;
+  }
+
+  .navbar-collapse {
+    margin-top: 16px;
+  }
+
+  .carousel-caption {
+    bottom: 35px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 50px;
+    line-height: 45px
+  }
+
+  .carousel-caption p {
+    display: none
+  }
+
+  .imageBlock p {
+    padding-right: 0;
+    margin-top: 1rem;
+  }
+
+  .aboutSection h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .blogBlocks .blogCol {
+    flex: 0 0 100%
+  }
+
+  .blogSection .midCol {
+    margin: 2rem 0;
+  }
+
+  .footLinks {
+    margin-top: 0;
+  }
+
+  footer p {
+    margin: 1rem 0;
+  }
+
+  footer .footLinks li {
+    width: 50%;
+  }
+
+  .demandDesc .d-flex {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .halfList ul {
+    padding: 1rem 0;
+  }
+
+  .halfList ul li p {
+    margin: 0 0 1rem;
+    flex: auto
+  }
+
+  .halfList ul li button {
+    margin: 0 1rem 0 0
+  }
+
+  .profilePages .userInfo, .profilePages .taskList {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+  }
+
+  .userInfo img {
+    margin: auto
+  }
+
+  .taskList li {
+    border-left: 0;
+    margin-bottom: 0.5rem
+  }
+
+  .scheduleList li i {
+    margin: 0;
+  }
+
+  .profilePages .scheduleList li button {
+    min-width: 100px;
+    font-size: 13px;
+  }
+
+  .badgeList li {
+    flex: 0 0 31%;
+  }
+  .friendListing .friendsPage {
+    flex: 0 0 100%
+  }
+}
+
+@media (max-width:414px) {
+  .programTabs .nav-item {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .programTabs .nav-link {
+    margin: 0 0 0.7rem 0;
+  }
+}
